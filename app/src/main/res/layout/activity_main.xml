@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="10sp"
+        android:layout_margin="3sp"
+        android:text="How are you feeling?"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp"
+        android:gravity="top|left"
+        android:orientation="vertical"
+        android:id="@+id/radioGroup">
+
+
+        <RadioButton
+            android:id="@+id/rad_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="radioclick"
+            android:text="Lovestruck" />
+
+        <RadioButton
+            android:id="@+id/rad_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="radioclick"
+            android:text="Excited" />
+
+        <RadioButton
+            android:id="@+id/rad_dramatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioclick"
+            android:checked="false"
+            android:text="Dramatic" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/my_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="3dp"
+        android:src="@drawable/question" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/pause_butt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="Pause"
+            android:onClick="pausePlay"/>
+
+        <Button
+            android:id="@+id/play_butt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="Play"
+            android:onClick="startPlay"/>
+
+        <Button
+            android:id="@+id/stop_butt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="Stop"
+            android:onClick="stopPlay"/>
+
+    </GridLayout>
+
+
+</LinearLayout>
